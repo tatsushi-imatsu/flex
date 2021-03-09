@@ -1,0 +1,16 @@
+.flex {
+  background-color: #00c7ce;
+  height: 50vh;/*vh … 高さの指定方法の一種です。Flexレイアウト以外でも使用できます。
+  ウィンドウの高さ全体を100として、割合でサイズを指定します。
+  100vhでウィンドウサイズと同じ高さになります。ウィンドウサイズを変えると可変します。*/
+  padding: 10px;
+  display: flex;
+  /*※子要素が親の箱の高さいっぱいに伸びているのはdisplay: flex;設定時に自動で適用される初期値です。詳しくは後述するalign-itemsを参照してください。*/
+  justify-content: center;
+  align-items: center;
+}
+.flex > div {
+  background-color: #fff;
+  margin: 5px;
+  font-size: 30px;
+}
